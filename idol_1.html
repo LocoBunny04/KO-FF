@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lee Felix ~ Stray Kids</title>
+        <link rel="icon" type="image/x-icon" href="stray_kids.jpeg">
+        <meta name="viewpoint" content="width=device-width, inital-scale=1">
+
+        <link rel="stylesheet" href="idol.css">
+        <script type = "text/javascript"></script>
+        <style>
+            .footer{
+                position: static;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                /* background-color: #F9FAF4; */
+                color: rgb(0, 0, 0);
+                text-align: center;
+            }
+            h4{
+                font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+                color: rgb(245,229,229);
+            }
+        </style>
+      </head>
+      <body>
+        <h1 style = "text-align: center;"><a href = "bookshelf.html" style="color: red;" class ="b_title">When Your Idol Boyfriend Comes to Your School </h1></a>
+        <p style = "text-align: center;">This story is not my own, all credits go to OT8 FF</p>
+        <h4 style="text-align: center;">To read the story with your input: Right click your mouse/trackpad. Select Inspect, and click on the Console tab</h4>
+        <p style ="text-align: center; font-size: 30px; color: firebrick;  background-color:thistle ;border-left: 0px;"onclick="begin()">Start</p>
+        <!--<form id="frm1" inputmode="">
+            Your name: <input type="text" name="yname" value=""><br>
+            Bully name: <input type="text" name="bname" value=""><br><br>
+            <input type="submit" value="Submit">
+          </form>-->
+        <h2>Part I of IV"</h2>
+        <h6 id ="pn"><h2>I woke up by my alarm, I sat up and yawned. Looking next to me, I saw my cutie pie sleeping. I admired (*stared*) at his adorable face, poking his nose and kissing his forehead I got up and went to the bathroom.
+        <h2>After brushing my teeth, taking a shower, and doing my hair and make-up; I put on my school uniform and went downstairs to make Felix and my breakfast.
+        After a while, I hear footsteps coming down the stairs.</p>
+            Felix: 'Morning baby.' He said in his cute and gruffly morning voice, while back hugging me. He snuggled his face into my neck, resting his chin on my shoulder, and falling back to sleep.</h2>
+        <h2>: 'Morning my sunshine.' I said, continuing to making breakfast. 'Go and wash up and come back downstairs, okay baby?' He hummed in response, letting go of me and making his way upstairs.
+            [20 minutes later] As I was finishing up with setting the table, Felix came downstairs.</h2>
+        <h2>Felix: 'Thank you for the food babe.' He said pecking my lips as he sat down.</h2>
+        <h2>: 'You are welcome baby.' I smiled as he gobbled up his food and drank his coffee. I looked at the time, Baby, I have to go now, have a good day at practice.' I said while pecking his lips.</h2>
+        <h2>Felix: 'Would you like me to drop you off?</h2>
+        <h2>: 'No, it is okay, it's only 10 minutes away.' I said pecking his lips one more time and rushing out the door.</h2>
+        <h2>Felix: 'Okay then, bye-bye, love.'</h2>
+        <h2>[10 minutes later] ~ I arrived at school.</h2>
+        <h2><a href ="idol_2.html"style = "color: #e5f5f5" onclick="partII()">[End of PART I]</h2> 
+        </body>
+        <!--<button type="button" onclick = "window.location.href='';"<a href="idol.js">Idol Boyfriend Felix</a></button>-->
+        <script >
+                
+             function begin(){
+                var startF = false;
+                var yname= prompt("Enter your name: ");
+                var bully = prompt("Enter your bully's name: ");
+                document.getElementById("pn").innerText= bully
+                welcomeScreen()
+            }
+                function welcomeScreen(){
+                    let startF;
+                    let yname
+                    console.log('This story is not my own, all credits go to OT8 FF\n');
+                    console.log("안녕하세요 (annyeonghaseyo)!\n" + yname +",\n\t Welcome to Python Fanfic Story Corner!\nToday, our fanfic has SKZ member, Lee Felix, as our male protagonist, and our female protagonist, " + yname +"\n");
+                    console.log('Synopsis: Your boyfriend is Lee Felix, lead dancer and rapper and sub-vocalist for Stray Kids. You are a high school student, whose parents are oversees. Being the meek and quiet person, that you are, you are easily bullied. What happens when the principal calls you to the office and force you to call your guardian?\n')
+                    var sy_start = prompt("Are you ready to read the story? 'y' for yes 'n' for no\n")
+                    if (sy_start === 'y'){
+                        startF = true;
+                        chpt();
+                    }
+                    else{
+                        stop()
+                    }
+                }
+                function partI(){
+                    let yname;
+                    console.log("Part I of II\n");
+                    console.log(yname+ ": 'I woke up by my alarm, I sat up and yawned. Looking next to me, I saw my cutie pie sleeping. I admired (*stared*) at his adorable face, poking his nose and kissing his forehead I got up and went to the bathroom.\nAfter brushing my teeth, taking a shower, and doing my hair and make-up; I put on my school uniform and went downstairs to make Felix and my breakfast.");
+                    console.log("After a while, I hear footsteps coming down the stairs.\n\nFelix: 'Morning baby.' He said in his cute and gruffly morning voice, while back hugging me. He snuggled his face into my neck, resting his chin on my shoulder, and falling back to sleep.\n");
+                    console.log(yname+": 'Morning my sunshine.' I said, continuing to making breakfast. 'Go and wash up and come back downstairs, okay baby?' He hummed in response, letting go of me and making his way upstairs.\n[20 minutes later] As I was finishing up with setting the table, Felix came downstairs.");
+                    console.log("\nFelix: 'Thank you for the food babe.' He said pecking my lips as he sat down.\n"+yname+": 'You are welcome baby.' I smiled as he gobbled up his food and drank his coffee. I looked at the time it was");
+                    var dtime = prompt("It's ");
+                    console.log(dtime+"\n'Baby, I have to go now, have a good day at practice.' I said while pecking his lips.\n\nFelix: 'Would you like me to drop you off?\n\n");
+                    console.log(yname+": 'No, it is okay, it's only 10 minutes away.' I said pecking his lips one more time and rushing out the door.\nFelix: 'Okay then, bye-bye, love.'\n[10 minutes later] ~ I arrived at school\n\n");
+                    console.log("\t[End of PART I]\n");
+                    const pt = prompt("Would you like to continue reading? 'y' or 'n' to go back to chapters list\n").toLowerCase();
+                    if (pt === 'y'){;
+                        partII()
+                    }else{chpt();}
+                }
+                function partII(){
+                    let yname
+                    let bully
+                    console.log("PART II");
+                    var school = prompt('I go to: ');
+                    //bully = prompt("Enter your bully's name: ")
+                    console.log(yname +": I finally reached my school, "+school+" trying to catch my breath, I told myself 'Breathe in...breathe out...*sigh* Hwaiting!' I walked down the hallway to my locker. Minding my own business, I opened my locker to get my books when all the sudden the hallway became dead quiet. I turned around and came face to face with my bully, "+bully+", and her annoying clique.\n\n");
+                    console.log(bully + "'Hey brat! Did you do my project from last week?' She said in her annoying high-pitch voice.\n\n"+yname+": 'N-no, uh I-I ummm I f-forgot about it.'\n\n"+bully+": '씨발 (Ssi-Bal) dumbass, beat her until she learns her damn lesson!' She yells to her clique. The girls beat me up until the principal was seen coming towards the chaos. "+bully+" told them to stop and force me to stand.");
+                    console.log(bully+ "dramatically fell to the ground. My mouth fell to the ground, *how dense of a person can "+bully+" be?\n\n"+bully+": '"+yname+"! How could you!' "+bully+" said to me with fake tears falling into the ground. The principal came at the wrong time.\n\n"+yname+": 'I-I what, I d--didn't do anything...!\n\nPrincipal: 'Both of you, my office...NOW!' "+bully+" sneers at me going towards the office.\n\n");
+                    console.log(yname +": 'Ahh, it hurts a lot...' I hiss in pain while limping towards the office.\n\nPrincipal: 'So..."+bully+" you start.'\n\n"+bully+": "+yname+" ' slapped me and pushed me to the ground, when all I asked was for "+yname+"'s help on a problem for a project!' "+bully+" said while fake crying.\n\n"+yname+": 'N-no, "+bully+" b-beat me up, just because I wouldn't do the p-project!' I said while stuttering.\n\n");
+                    console.log("Principal: 'Enough...Enough! At the end of the day, call your guardian to come after school to sort this out.'\n[Time skips to the second to last class]\n\n"+yname+": 'Oh No! What should I do...? My parents are overseas right now, what should I do...? Call Felix's parents? No. They're probably busy. Felix?... No, I'll interrupt him from his practice.'\n\t\t [END of PART II]\n");
+                    var pt = prompt("Would you like to continue reading? 'y' or 'n' to go back to chapters list\n").toLocaleLowerCase();
+                    if (pt === 'y'){
+                        partIII();
+                    }else{
+                        chpt();  
+                }
+                }
+                function partIII(){
+                    let yname;
+                    let bully;
+                    console.log("[PART III:\n");
+                    console.log(yname +"'I've got no other choice, I'll call Felix and hope he won't get mad at me...'\n\n[On the phone]:\n\n"+yname+": 'Felix baby..?'\n\nFelix: *breathing heavily* 'Yes baby?...Do you need someone to pick you up? ... I'll pick you up.'\n\n"+yname+": 'Yes, b-but I got a f-favor to ask...'\n\nFelix: 'Why are you stuttering, tell me what's wrong baby.'\n\n");
+                    console.log(yname+": 'P-principal told me that I have to call my guardian, but my parents are overseas...and I-I was wondering i-if y-you would come instead......?'\n\nFelix: 'Of course baby, but what is the problem? Did you get hurt?...Did someone bully you...?'\n\n"+yname+": 'I-I, she di-...' I burst into tears before I could finish my explanation.\n\nFelix: 'Shhh baby, you are okay...okay? I am coming.' He ended the call.\n\n");
+                    console.log("Principal: 'Where is your guardian? It has been 20 minutes.'\n" + yname + ": 'H-he's coming...'I said as I was rubbing my sore leg in hopes to soothe with the pain.\n"+bully+": 'Her parents are soooo slow,' " + bully + "said annoyed, they are probably like 50 years old.'\n" + bully+"'s Mom: 'Shh, sweetie wait a little longer.'\n");
+                    console.log(bully + ": 'Ughh-'\n[Knock, Knock, Knock...\nFelix: 'Sorry for the wait.' He said while entering and closing the door behind him.\n\nPrincipal: 'A-aren't you Lee Felix...?' The principal asked looking at the young guy, a little surprised, your group won the award? "+bully+" staring at Felix the whole time...\n\nFelix: 'Yes sir.' He answered.\nPrincipal: 'W-what are you doing here...?'\n\n");
+                    console.log(bully + ": 'Because I called him duhh, babyyyy-'"+bully+"whined at Felix."+bully+"'s eyes widen...Felix stared at"+bully+"in disgust.\n\nFelix: 'I'm here for my baby, "+yname+", "+bully+"'s eyes widen\n\n"+yname+": 'Baby,' I said to him grabbing his attention\n\nFelix: 'Hey baby, what's wrong?' He said as he bent down to my level, caressing my cheeks with his hand, the other caressing my hands. Looking into my puffy, yet shiny eyes.");
+                    console.log("I pointed at my legs, Felix pressed it a little and I whimper.\n\nFelix: 'I am sorry, does it hurt a lot?' He said worriedly. I nodded as a tear rolled down, the principal cleared his throat.\n\nPrincipal: 'L-let's start, "+yname+" was seen to have been accused of slapping and pushing "+bully+", but I only saw "+yname+" push "+bully+".\n\n"+bully+"'s Mom: 'I say we should suspend "+yname+" for doing such a thing to my child!' She blurted out.\n");
+                    console.log(bully+" smirked, " + bully+":'I don't know why you would date such a person.'\n\n" +yname+ ": "+bully+" said in disgust, while looking at me up and down. Felix heard that and was going to do something about it, but I pulled on his sleeve. 'Lixie' I said softly, as I looked at him. He calmed down a little, he kneeled with one knee next to me, eyeing "+bully+".");
+                    console.log("\nFelix asked 'Do you have any proof? Just because you said it happened...doesn't mean it's true. We can ask other students OR view the security cameras.' Then "+bully+"'s  expression changed.\n\n"+bully+"'s mind: 'Damn it...What if I get suspended?'\n\nFelix: 'Let's view the security footage then.'");
+                    console.log("While the principal was looking for the footage Felix lifted "+yname+" gently and sat himself in the chair previously occupied by his baby. He then placed "+yname+" on his lap facing towards him. "+yname+" snuggled into his neck, chin resting on Felix's shoulder, and arms wrapped around him. With "+yname+" eyes closed, Felix began to stroke "+yname+"'s back gently to relax his baby. ");
+                    console.log("Meanwhile, "+bully+" watched the couple with a zealous expression. The principal finally found the footage during the passing periods in the hallway, where the incident occurred. Everyone in the room except "+yname+" watched. After reviewing the footage, They all were shocked as "+bully+" smiled awkwardly, 'hehehe...look, I can explain.\n\nFelix: 'THERE IS NOTHING TO EXPLAIN, LOOK AT THE FOOTAGE!' Felix yelled in anger");
+                    console.log("\nPrincipal: '"+bully+"! You are suspended'\n"+bully+"'s Mom: 'I am so disappointed! Wait until we get home!'");
+                    console.log("\n[End of PART III\n");
+                    var pt = prompt("Would you like to continue reading? 'y' or 'n' to go back to chapters list\n").toLocaleLowerCase()
+                    if (pt === 'y'){
+                        partIV();
+                    }else{chpt(); }
+                }
+                function partIV(){
+                    //let yname;
+                    console.log("\n[PART IV:\n")
+                    console.log(yname+" woke up due to all the screaming, 'Hmm...? What's wrong...? Baby...? I said while hugging Felix.\n\nFelix: 'Shh, it's okay...just continue to rest.' He said lifting me by my butt as support as he walked out of the office and strode through the hallways. Students' eyes follow his every move with their mouths hanging open. However, Felix didn't care, he was solely focused on getting me home.");
+                    console.log("He placed me in the back, giving me more room to sleep. He then got into the driver's seat and drove home.\n[Time Skips]\nHe parks the car in front of our house, then came and opened the car door like a gentleman. However, I was asleep. He gently picks me up and my arms automatically wrap around his neck, as my legs wrap around his waist. Felix supported me and walked to the front door.");
+                    console.log("He puts his keys and my bag on the ground...then carries me up to the bathroom. He then says 'Hey baby...wake up hun...we're home let's take a bath, hm?' Yawning, I woke up while he helps me undress. He then prepares the bath, he got in and told me to come in. Limping towards the bathtub, I got in and laid on his chest. He then began to scrub my body with soap.");
+                    console.log("He then move to my legs. While scrubbing, Felix accidentally scrubbed my injured leg a little too hard, causing me to whimper in pain into his chest.\n\nFelix: 'I am sorry hun, does it still hurt?'\n\n"+yname +": I nod my head.\n[10 minutes later]\nFelix helped me get out, he placed me on the corner of the bathtub while he dried me and him.\n\nFelix: 'Wait here...'\nHe then wraps me in a towel.");
+                    console.log("He came back with clothes. He dressed himself then helped me with my underwear and t-shirt. He got the first aid kit and started applying ointment onto my sore leg, then he carried me to bed. Placing me on the bed, Felix lays down next to me. I scooted closer to him putting my head on his chest; and listening to his heartbeat.");
+                    console.log("After a while Felix asked me, 'Did she always bully you...? Did she always...h-hurt you?\n\n"+yname +":I was silent...then I whispered, 'y-yes she d-did'\nI heard sobs looking up from Felix's chest, the sight I never wanted to see...Felix crying.\n\nFelix: 'I-I'm so sorry, I didn't protect you when you needed me...I-I'm such a bad boyfriend...'");
+                    console.log("Felix said while he was a sobbing mess, his nose pink, and tears covering his beautiful freckles. I caress his cheeks, wiping his tears away from his freckles. I then laid my forehead on his, our nose touching.\n\n"+yname+": 'Don't speak nonsense you're the only sunshine I could've ask for.' I then smashed my lips onto his, he responded to my kiss.");
+                    console.log("As we both parted, we lovingly look into each other's eyes. We both smiled, Felix, with his big, goofy, lovestruck, lopsided grin. I then laid my head on his chest, closed my eyes and said,\n\n"+yname +": 'I love you baby...and I will never stop.'\n\nFelix responded with, 'I love you too, and will for the rest of my life.' We then fell asleep in each other's embrace.");
+                    console.log("\nThe END\n");
+                    chpt();
+                }
+                function chpt(){
+                    var cpt = prompt("There are 4 chapters in this story. Which chapter would you like to read?\nChapter '1'\nChapter '2'\nChapter '3'\nor Chapter '4'\n");
+                    console.log("Chapters ", cpt);
+                    if (cpt === '1'){
+                        console.log("1"); 
+                        partI();
+                    }
+                    else if(cpt == '2'){
+                        console.log("2"); 
+                        partII();
+                    }
+                    else if( cpt === '3'){
+                        console.log("3");
+                        partIII();
+                    }
+                    else if( cpt === '4'){
+                        console.log("4");
+                        partIV();
+                    }
+                } 
+                
+        </script>
+    <h4 class="footer"><a href="Load.html" style="text-decoration: none;color: rgb(245,229,229)">©2022 Kawinthida Haase - All Rights Reserved</a></h4>
+
+    </body>
+</html>

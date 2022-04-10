@@ -20,7 +20,7 @@ const STATIC_ASSETS = [
     'jeon.html',
     'Load.html',
     'oneNight.html',
-    'oneNight2',
+    'oneNight2.html',
     'oneNight3.html',
     'Saved.html',
     'saved2.html',

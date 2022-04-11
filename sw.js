@@ -1,4 +1,6 @@
-const CACHE_NAME = "static_cache2"
+/*jshint esversion: 9 */
+
+const CACHE_NAME = "static_cache2";
 const STATIC_ASSETS = [
     'BadBoy_pt1.html',
     'BadBoy_pt2.html',
@@ -33,41 +35,40 @@ const STATIC_ASSETS = [
     'got7.css',
     'idol.css',
     'libr.css',
-]
+];
 
 async function preCache(){
-    const cache = await caches.open(CACHE_NAME)
-    return cache.addAll(STATIC_ASSETS)
+    const cache = await caches.open(CACHE_NAME);
+    return cache.addAll(STATIC_ASSETS);
 }
 self.addEventListener('install', event =>{
     console.log("[SW] installed");
-    self.skipWaiting()
-    event.waitUntil(preCache())
-})
-
+    self.skipWaiting();
+    event.waitUntil(preCache());
+});
 async function cleanUpCache(){
-    const keys = await caches.keys()
+    const keys = await caches.keys();
     const keysToDelete = keys.map(key => {
         if (key !== CACHE_NAME) {
-            return caches.delete(key)
+            return caches.delete(key);
         }
-    })
+    });
 }
 self.addEventListener('activate' , event => {
     console.log("[SW] activated");
-    event.waitUntil(cleanUpCache())
-})
+    event.waitUntil(cleanUpCache());
+});
 
 async function fetchAssets(event){
     try {
-        const response = fetch(event.response)
-        return response
+        const response = fetch(event.response);
+        return response;
     } catch (err){
-        const cache = await caches.open(CACHE_NAME)
-        return cache.match(event.response)
+        const cache = await caches.open(CACHE_NAME);
+        return cache.match(event.response);
     }
 }
 self.addEventListener("fetch" , event => {
     console.log("[SW] fetched");
-    event.responseWith(fetchAssets(event))
-})
+    event.responseWith(fetchAssets(event));
+});

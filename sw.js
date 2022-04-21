@@ -31,10 +31,14 @@ const STATIC_ASSETS = [
     'saved5.html',
     'saved6.html',
     'SKZ.html',
+    'Joon_problem.html',
+    'wave.html',
+    'Fan_Meet.html',
     'bts.css',
     'got7.css',
     'idol.css',
     'libr.css',
+    
 ];
 
 async function preCache(){

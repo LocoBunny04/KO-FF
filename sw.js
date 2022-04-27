@@ -34,6 +34,7 @@ const STATIC_ASSETS = [
     'Joon_problem.html',
     'wave.html',
     'Fan_Meet.html',
+    'markTuan.html',
     'bts.css',
     'got7.css',
     'idol.css',

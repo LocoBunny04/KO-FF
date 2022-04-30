@@ -20,6 +20,7 @@ const STATIC_ASSETS = [
     'idol_4.html',
     'index.html',
     'jeon.html',
+    'Jk_lap.html',
     'Load.html',
     'oneNight.html',
     'oneNight2.html',

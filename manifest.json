@@ -1,0 +1,9 @@
+{
+    "name": "Korean Pop Fanfics",
+    "short_name": "KO-FF",
+    "theme_color": "#bdb4ff",
+    "background_color": "#000000",
+    "display": "browser",
+    "scope": "./",
+    "start_url": "."
+}
